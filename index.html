@@ -5,38 +5,58 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Daniel's Site</title>
     <link rel="stylesheet" type="text/css" href="styles.css" />
-    <script src="function.js"></script>
   </head>
+  <body>
+    <script>
+      // When the user scrolls the page, execute the function
+      window.onscroll = function() {myFunction()};
+      
+      // Get the navbar
+      var navbar = document.getElementById("navbar");
+      
+      // Get the offset position of the navbar
+      var sticky = navbar.offsetTop;
+      
+      // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+      function myFunction() {
+        if (window.pageYOffset >= sticky) {
+          navbar.classList.add("sticky")
+        } else {
+          navbar.classList.remove("sticky");
+        }
+      }
+      </script>
   <header>
+    <!-- Top Nav / Link Bar -->
     <nav id="navbar">
+      <!-- images with links to socials -->
       <a href="https://www.github.com/1DanielKing"
         ><img id="linkpic" src="img/gitblack.png" alt="GitHub Invertocat logo"
       /></a>
       <a href="https://www.linkedin.com/in/daniel-king-926672153/"
         ><img id="" src="img/linkedin.png" alt="LinkedIn"
       /></a>
+      <!-- Page ref buttons (NEED FIXED) -->
       <a>Projects</a>
       <a>Skills</a>
       <a>Daniel King</a>
     </nav>
   </header>
-  <body>
     <main>
-      <h1 class id="h1">Daniel King</h1>
-      <h2>Full Stack Developer</h2>
-      <h3>About me!</h3>
-      <p>
+      <h1 id="name">Daniel King</h1>
+      <h2 id="title">Full Stack Developer</h2>
+      <h3 class="heading">About me!</h3>
+      <p class="textbody">
         I have been interested in technology since I was very young. It started
-        with my use of the family PC running Windows 98 at age 5,
-        messing with settings (sorry Dad) and exploring menus. Eventually I got
-        into building PCs, and within in the last few years, 
-        my interest has peaked as I see a potential career in something I 
+        with my dad's Win 98 PC at age 5, and eventually I got into building PCs. 
+        Recently I have decided to pursue a career in something I have interest in; 
+        after using software as an insurance adjuster, I decided I want to develop software.
         I began self studying Web Dev and Linux in 2022, and now I am currently attending
         a Full Stack Bootcamp at We Can Code IT, with a primary focus in Java.
       </p>
-      <h2>My Projects</h2>
-      <h2>My skills</h2>
-      <ul>
+      <h2 class="heading">My Projects</h2>
+      <h2 class="heading">My skills</h2>
+      <ul class="textbody">
         <li>HTML</li>
         <li>CSS</li>
         <li>Java</li>
@@ -45,5 +65,7 @@
         <li>Knowledgeable in Linux and Windows</li>
       </ul>
     </main>
+    <footer>
+    </footer>
   </body>
 </html>

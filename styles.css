@@ -32,3 +32,10 @@
   .sticky + .content {
     padding-top: 60px;
   }
+
+
+
+  /* Background color */
+  body{
+    background-color: #90b4da;
+  }
