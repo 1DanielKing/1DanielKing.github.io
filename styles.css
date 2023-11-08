@@ -32,6 +32,15 @@
   justify-content: flex-end;
 }
 
+.heading{
+  display: grid;
+  
+}
+
+.heading img{
+  max-width: 50%;
+}
+
 /* Background color */
 body {
   font-family: "Roboto", sans-serif;
@@ -46,7 +55,7 @@ body {
   
   .projects{
     display: flex
-    
+
   }
 
 main{
