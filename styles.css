@@ -37,6 +37,17 @@ body {
   font-family: "Roboto", sans-serif;
   background-color: #90b4da;
   }
+  
+  .textbody{
+    width: 50%;
+    background-color: #05668dff;
+    padding: 5%;
+  }
+  
+  .projects{
+    display: flex
+    
+  }
 
 main{
   display: flex;
@@ -46,6 +57,12 @@ main{
   align-items: center;
 }
 
-.textbody{
-  width: 50%;
+footer{
+  
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+  background-color: #a67526ff;;
 }
