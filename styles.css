@@ -19,7 +19,20 @@
   align-content: center;
   padding: 14px;
   text-decoration: none;
-  
+
+}
+
+
+
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 60px;
 }
 
 #homelink {

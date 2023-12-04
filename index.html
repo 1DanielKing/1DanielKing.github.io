@@ -11,6 +11,7 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
       rel="stylesheet"
     />
+    <script src="script.js"></script>
   </head>
   <body>
     <header>
@@ -69,5 +70,21 @@
       </section>
     </main>
     <footer><br><b>Copyright Daniel King 2023<br><br></b></footer>
+    <script>
+      window.onscroll = function() {
+        myFunction();
+      };
+  
+      var navbar = document.getElementById("navbar");
+      var sticky = navbar.offsetTop;
+  
+      function myFunction() {
+        if (window.pageYOffset >= sticky) {
+          navbar.classList.add("sticky");
+        } else {
+          navbar.classList.remove("sticky");
+        }
+      }
+    </script>
   </body>
 </html>
