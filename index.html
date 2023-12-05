@@ -18,12 +18,12 @@
       <!-- Top Nav / Link Bar -->
       <nav id="navbar">
         <div id="homelink">
-          <a href="index.html"><b>DanielKing.pro</b></a>
+          <a href="https://www.danielking.pro/"><b>Daniel King</b></a>
         </div>
         <div id="links">
           <a href="index.html#skills"><b>Skills</b></a>
           <a href="index.html#projects"><b>Projects</b></a>
-          <a href="contact.html"><b>Contact Request</b></a>
+          <a href="contact.html"><b>Contact</b></a>
           <!-- images with links to socials -->
           <a href="https://www.linkedin.com/in/daniel-king-926672153/"
             ><img src="img/linkedin.png" alt="LinkedIn"
@@ -35,26 +35,35 @@
       </nav>
     </header>
     <main>
+      <!-- Main Body containing all content other than nav/footer-->
       <section class="heading">
-        <h1 id="name">Daniel King</h1>
-        <img src="img/upper.png" alt="photo of Daniel">
-        <h2 id="title">Full Stack Developer</h2>
+        <div class="name_photo">
+          <img src="img/upper.png" alt="photo of Daniel" />
+          <div class="details">
+            <p>Daniel King</p>
+            <p>Full Stack Developer</p>
+          </div>
+        </div>
+        
       </section>
       <p class="textbody">
-        About me:
-        I have been interested in technology since I was very young. It started
-        with my dad's Win 98 PC at age 5, and eventually I got into building
-        PCs. Recently I have decided to pursue a career in something I have
-        interest in; after using software as an insurance adjuster, I decided I
-        want to develop software. I began self studying Web Dev and Linux in
-        2022, and now I am currently attending a Full Stack Bootcamp at We Can
-        Code IT, with a primary focus in Java.
+        About me: I have been interested in technology since I was very young.
+        It started with my dad's Win 98 PC at age 5, and eventually I got into
+        building PCs. Recently I have decided to pursue a career in something I
+        have interest in; after using software as an insurance adjuster, I
+        decided I want to develop software. I began self studying Web Dev and
+        Linux in 2022, and now I am currently attending a Full Stack Bootcamp at
+        We Can Code IT, with a primary focus in Java.
       </p>
       <section id="projects" class="projects">
         <h2>My Projects</h2>
         <div>
           <img src="img/calc.png" alt="calculator" />
-          <p><a href="https://github.com/1DanielKing/Java_BasicCalculator.git">Java Basic Calculator</a></p>
+          <p>
+            <a href="https://github.com/1DanielKing/Java_BasicCalculator.git"
+              >Java Basic Calculator</a
+            >
+          </p>
         </div>
       </section>
       <section id="skills">
@@ -68,16 +77,21 @@
           <li>Knowledgeable in Linux and Windows</li>
         </ul>
       </section>
+      <div id="Copyright">
+        <p>  <br /><b> &#169; Daniel King 2022/2023<br /><br /></b></p>
+      </div>
     </main>
-    <footer><br><b>Copyright Daniel King 2023<br><br></b></footer>
+    <footer>
+      <p> </p>
+    </footer>
     <script>
-      window.onscroll = function() {
+      window.onscroll = function () {
         myFunction();
       };
-  
+
       var navbar = document.getElementById("navbar");
       var sticky = navbar.offsetTop;
-  
+
       function myFunction() {
         if (window.pageYOffset >= sticky) {
           navbar.classList.add("sticky");
