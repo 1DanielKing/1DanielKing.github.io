@@ -11,7 +11,7 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
       rel="stylesheet"
     />
-    <script src="script.js"></script>
+    
   </head>
   <body>
     <header>
@@ -36,7 +36,7 @@
     </header>
     <main>
       <!-- Main Body containing all content other than nav/footer-->
-      <section class="heading">
+      <section class="aboutArea">
         <div class="name_photo">
           <img src="img/upper.png" alt="photo of Daniel" />
           <div class="details">
@@ -47,14 +47,7 @@
         
       </section>
       <p class="textbody">
-        About me: I have been interested in technology since I was very young.
-        It started with my dad's Win 98 PC at age 5, and eventually I got into
-        building PCs. Recently I have decided to pursue a career in something I
-        have interest in; after using software as an insurance adjuster, I
-        decided I want to develop software. I began self studying Web Dev and
-        Linux in 2022, and now I am currently attending a Full Stack Bootcamp at
-        We Can Code IT, with a primary focus in Java.
-      </p>
+        About me: Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae sed aspernatur natus facilis beatae numquam, quas magni architecto sit nulla fugit velit perspiciatis esse dignissimos eaque ratione in labore maiores.
       <section id="projects" class="projects">
         <h2>My Projects</h2>
         <div>
@@ -84,21 +77,6 @@
     <footer>
       <p> </p>
     </footer>
-    <script>
-      window.onscroll = function () {
-        myFunction();
-      };
-
-      var navbar = document.getElementById("navbar");
-      var sticky = navbar.offsetTop;
-
-      function myFunction() {
-        if (window.pageYOffset >= sticky) {
-          navbar.classList.add("sticky");
-        } else {
-          navbar.classList.remove("sticky");
-        }
-      }
-    </script>
+    <script src="script.js"></script>
   </body>
 </html>
