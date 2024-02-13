@@ -46,11 +46,11 @@
   justify-content: flex-end;
 }
 
-.aboutArea {
+#aboutArea {
   display: grid;
 }
 
-.aboutArea img {
+#aboutArea img {
   max-width: 30%;
   aspect-ratio: 1;
 }
@@ -61,8 +61,14 @@
   display: flex;
   justify-content: center;
   align-content: center;
-
+  
 }
+
+.name_photo img { 
+  width: 200px; 
+  height: auto; 
+}
+
 
 /* Background color */
 body {
@@ -85,8 +91,7 @@ body {
 }
 
 /* Example for a gradient leaving 25% on each side */
-/* Set the background color using linear-gradient */
-/* #main {
+main {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -94,10 +99,11 @@ body {
   position: relative;
   width: 75%;
   padding: 2%;
+  /* Set the background color using linear-gradient */
   background-image: linear-gradient(to right, transparent 25%, rgba(255, 255, 255, 0.8) 25%, rgba(255, 255, 255, 0.8) 75%, transparent 75%);
   background-position: center;
 }
- */
+
 
 footer {
   display: flex;
