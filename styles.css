@@ -46,11 +46,11 @@
   justify-content: flex-end;
 }
 
-.heading {
+#aboutArea {
   display: grid;
 }
 
-.heading img {
+#aboutArea img {
   max-width: 30%;
   aspect-ratio: 1;
 }
@@ -61,8 +61,14 @@
   display: flex;
   justify-content: center;
   align-content: center;
-
+  
 }
+
+.name_photo img { 
+  width: 200px; 
+  height: auto; 
+}
+
 
 /* Background color */
 body {

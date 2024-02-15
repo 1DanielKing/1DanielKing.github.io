@@ -11,7 +11,7 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
       rel="stylesheet"
     />
-    <script src="script.js"></script>
+    
   </head>
   <body>
     <header>
@@ -36,7 +36,7 @@
     </header>
     <main>
       <!-- Main Body containing all content other than nav/footer-->
-      <section class="heading">
+      <section class="aboutArea">
         <div class="name_photo">
           <img src="img/upper.png" alt="photo of Daniel" />
           <div class="details">
@@ -47,12 +47,9 @@
         
       </section>
       <p class="textbody">
-        About me: I have had a life long interest in technology, and recently I have decided to pursue a career in something I
-        have interest in; after using software as an insurance adjuster, I
-        decided I want to develop software. I began self studying Web Dev and
-        Linux in 2022, and now I am currently attending a Full Stack Bootcamp at
-        We Can Code IT, with a primary focus in Java.
+        About me: Developer skilled in frontend web development, Java, Javascript, HTML and CSS. I recently obtained the Java Full Stack Developer certificate from We Can Code IT. I am also skilled in administering Windows and Linux systems.
       </p>
+
       <section id="projects" class="projects">
         <h2>My Projects</h2>
         <div>
@@ -82,21 +79,6 @@
     <footer>
       <p> </p>
     </footer>
-    <script>
-      window.onscroll = function () {
-        myFunction();
-      };
-
-      var navbar = document.getElementById("navbar");
-      var sticky = navbar.offsetTop;
-
-      function myFunction() {
-        if (window.pageYOffset >= sticky) {
-          navbar.classList.add("sticky");
-        } else {
-          navbar.classList.remove("sticky");
-        }
-      }
-    </script>
+    <script src="script.js"></script>
   </body>
 </html>
