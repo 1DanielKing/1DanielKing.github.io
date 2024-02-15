@@ -3,82 +3,82 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Daniel's Site</title>
+    <title>Daniel King's Portfolio</title>
     <link rel="stylesheet" type="text/css" href="styles.css" />
+    <link rel="stylesheet" type="text/css" href="navbar.css" />
+    <link rel="stylesheet" type="text/css" href="modal-webpage.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
       rel="stylesheet"
     />
-    
   </head>
   <body>
-    <header>
-      <!-- Top Nav / Link Bar -->
-      <nav id="navbar">
-        <div id="homelink">
-          <a href="https://www.danielking.pro/"><b>Daniel King</b></a>
-        </div>
-        <div id="links">
-          <a href="index.html#skills"><b>Skills</b></a>
-          <a href="index.html#projects"><b>Projects</b></a>
-          <a href="contact.html"><b>Contact</b></a>
-          <!-- images with links to socials -->
-          <a href="https://www.linkedin.com/in/daniel-king-926672153/"
-            ><img src="img/linkedin.png" alt="LinkedIn"
-          /></a>
-          <a href="https://www.github.com/1DanielKing"
-            ><img src="img/gitblack.png" alt="GitHub Invertocat logo"
-          /></a>
-        </div>
-      </nav>
-    </header>
-    <main>
-      <!-- Main Body containing all content other than nav/footer-->
-      <section class="aboutArea">
-        <div class="name_photo">
-          <img src="img/upper.png" alt="photo of Daniel" />
-          <div class="details">
-            <p>Daniel King</p>
-            <p>Full Stack Developer</p>
+    <div class="background-container">
+      <header id="navbar-container"></header>
+      <main>
+        <!-- Main Body containing all content other than nav/footer-->
+        <section class="aboutAreaContainer">
+          <div class="aboutArea">
+            <div class="pic-title">
+              <div>
+                <h1>Daniel King</h1>
+                <h2>Full Stack Developer</h2>
+              </div>
+              <div class="selfImage">
+                <img src="img/upper.png" alt="photo of Daniel" />
+              </div>
+            </div>
+            <div>
+              <p>
+                Developer skilled in frontend web development, Java, Javascript,
+                HTML and CSS. I recently obtained the Java Full Stack Developer
+                certificate from We Can Code IT. I am also skilled in
+                administering Windows and Linux systems.
+              </p>
+            </div>
           </div>
-        </div>
-        
-      </section>
-      <p class="textbody">
-        About me: Developer skilled in frontend web development, Java, Javascript, HTML and CSS. I recently obtained the Java Full Stack Developer certificate from We Can Code IT. I am also skilled in administering Windows and Linux systems.
-      </p>
+        </section>
 
-      <section id="projects" class="projects">
-        <h2>My Projects</h2>
-        <div>
-          <img src="img/calc.png" alt="calculator" />
-          <p>
-            <a href="https://github.com/1DanielKing/Java_BasicCalculator.git"
-              >Java Basic Calculator</a
-            >
-          </p>
+        <section id="projects" class="projects">
+          <h2>My Projects</h2>
+
+          
+            <a class ="button" href="https://github.com/1DanielKing/Otter-Collabs"
+              >OtterCollab - A full stack single page web app for musicians to collaborate.</a>
+              <br>
+            <a class ="button" href="https://github.com/1DanielKing/Java-Infix-Expression-Calculator">Java Calculator - A Java app to solve long expressions.</a>
+            <br>
+            <a class ="button" href="https://github.com/1DanielKing/Mystery-Educator-SPA-Jac-Enterprises">Mystery Educator - A SPA children's educator.</a>
+            <br>
+            <a class ="button">Ubuntu Desktop hosted on my server - COMING SOON</a>
+            <br>
+          
+        </section>
+        <section id="skills" class="skills-container">
+          <div style="margin-left: 10%;">
+          <h2>My skills</h2>
+          <ul class="textbody">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>Java</li>
+            <li>Spring</li>
+            <li>JavaScript</li>
+            <li>Knowledgeable in Linux and Windows</li>
+          </ul>
         </div>
-      </section>
-      <section id="skills">
-        <h2>My skills</h2>
-        <ul class="textbody">
-          <li>HTML</li>
-          <li>CSS</li>
-          <li>Java</li>
-          <li>Spring</li>
-          <li>JavaScript</li>
-          <li>Knowledgeable in Linux and Windows</li>
-        </ul>
-      </section>
-      <div id="Copyright">
-        <p>  <br /><b> &#169; Daniel King 2022/2023<br /><br /></b></p>
-      </div>
-    </main>
-    <footer>
-      <p> </p>
-    </footer>
-    <script src="script.js"></script>
+        </section>
+
+        <footer>
+          <div id="Copyright">
+            <p>
+              <br /><b> &#169; Daniel King 2022/2023<br /><br /></b>
+            </p>
+          </div>
+        </footer>
+      </main>
+      <script src="script.js"></script>
+    </div>
   </body>
 </html>
