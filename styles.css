@@ -1,31 +1,5 @@
 /* IDs get the hastag # , classes get the period . */
 
-/* Style the navbar */
-#navbar {
-  background-color: rgb(120, 102, 80);
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  flex-wrap: nowrap;
-  justify-content: space-between;
-  font-family: "Roboto", sans-serif;
-}
-
-/* Navbar anchors styles*/
-#navbar a {
-  float: center;
-  display: block;
-  color: #f2f2f2;
-  align-content: center;
-  padding: 14px;
-  text-decoration: none;
-}
-
-#navbar a:hover {
-  color: #000;
-  background-color: beige;
-}
-
 .sticky {
   position: fixed;
   top: 0;
@@ -36,15 +10,55 @@
   padding-top: 60px;
 }
 
-#homelink {
-  display: flex;
-  justify-content: flex-start;
+body { /* Reset default margin and padding */
+  margin: 0;  
+  padding: 0;
 }
 
-#links {
-  display: flex;
-  justify-content: flex-end;
+a {
+  color: inherit; /* Inherit color from the parent element */
+  text-decoration: none;
+  border-bottom: 2px solid transparent; /* Add a transparent border initially */
+  transition: border-color 0.3s ease; /* Add transition for smooth effect */
 }
+
+a:hover {
+  color: #8EA4D2;
+  border-width: 1px;
+  border-color: black;
+}
+
+#navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 40px;
+  z-index: 100;
+  background-color: white ;
+  color: #054d68;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  justify-content: space-between;
+  font-family: "Roboto", sans-serif;
+}
+
+#navbar .social-links {
+  display: flex;
+  gap: 10px; /* Adjust the gap between social links */
+}
+
+#navbar .social-links a img {
+  width: 24px; /* Adjust the size of the social icons */
+  height: 24px;
+}
+
+#navbar .social-links a:hover img {
+  filter: brightness(1.2); /* Add brightness effect on hover */
+}
+
+
+
 
 #aboutArea {
   display: grid;
