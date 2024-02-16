@@ -22,8 +22,6 @@ body::before {
   z-index: -1; /* Ensure the pseudo-element is behind other content */
 }
 
-
-
 main {
   padding-top: 6.5%; /*navbar space */
   display: flex;
@@ -31,20 +29,91 @@ main {
   flex-wrap: wrap;
   max-width: 100%;
   align-items: left;
+  margin-top: 0;
 }
 
 .aboutAreaContainer {
-  background: linear-gradient(to top, rgba(228, 230, 195, 0.9), rgba(228, 230, 195, 0.3)); 
+  background: linear-gradient(
+    to top,
+    rgba(228, 230, 195, 0.9),
+    rgba(228, 230, 195, 0.3)
+  );
+  display: flex;
+  justify-content: center;
+  margin-top: -6%;
+  min-height: 40vh;
 }
 
 .aboutArea {
   margin-left: 10%;
+  display: flex; /* Use flexbox */
+  align-items: flex-end;
+  
+}
 
+.aboutArea h1 {
+  font-size: 350%; /* Adjust the font size as needed */
+  margin-top: 0;
+}
+
+.aboutArea h2 {
+  font-size: 250%;
+  margin-top: 0;
+}
+
+.aboutArea p {
+  font-size: 150%;
+  margin-top: 0;
+}
+
+.pic-title {
+  display: flex;
+  justify-content: space-between; /* Align items with space between */
+  align-items: center; /* Align items vertically */
+  gap: 20%;
+  white-space: nowrap;
+}
+
+.aboutText p{
+  display: flex;
+  align-items: flex-end;
+  margin-left: 30px;
+  margin-right: 20px;
+} 
+
+.selfImage {
+  width: 25%; /* Adjust the width of the image */
+  height: auto;
+  margin-right: 10%;
+  
+}
+
+
+.projects {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  text-align: left;
+  margin-left: 10%;
+  min-height: 50vh;
+}
+
+.heading-background {
+  padding: 5px 10px; /* Add padding for spacing around the text */
+  background-color: rgba(255, 255, 255, 0.8); /* Background color with opacity for transparency */
+  border-radius: 10px; /* Apply rounded corners */
+}
+
+
+.project-childs {
+  display: flex;
+  flex-direction: column;
+  
 }
 
 .button {
-  background-color: #022F40; /* Dark blue */
-  color: #E4E6C3; /* Light blue */
+  background-color: #022f40; /* Dark blue */
+  color: #e4e6c3; /* Light blue */
   border: none;
   padding: 10px 20px;
   font-size: 16px;
@@ -55,52 +124,15 @@ main {
 }
 
 .button:hover {
-  background-color: #022F40; /* Dark blue */
+  background-color: #022f40; /* Dark blue */
 }
-
-
-
-.pic-title {
-  display: flex;
-  justify-content: space-between; /* Align items with space between */
-  align-items: center; /* Align items vertically */
-  gap: 20%;
-  white-space: nowrap;
-}
-
-.pic-title img {
-  width: 45%; /* Adjust the width of the image */
-  height: auto;
-}
-
-
-.aboutArea h1 {
-  font-size: 250%; /* Adjust the font size as needed */
-  
-}
-
-.aboutArea h2 {
-  font-size: 175%;
-  
-}
-
-.aboutArea p{
-  font-size: 18px;
-  margin-right: 50%;
-  
-}
-
-
-.projects {
-  display: flex;
-  flex-direction: column;
-  text-align: left;
-  margin-left: 10%;
-}
-
 .skills-container {
-  background: linear-gradient(to top, rgba(228, 230, 195, 0.9), rgba(228, 230, 195, 0.3)); 
-  
+  background: linear-gradient(
+    to top,
+    rgba(228, 230, 195, 0.9),
+    rgba(228, 230, 195, 0.3)
+  );
+  font-size: 150%;
 }
 
 footer {

@@ -1,64 +1,109 @@
-/* navbar.css */
+/* General styling */
 a {
-    color: inherit; /* Inherit color from the parent element */
-    text-decoration: none;
-    border-bottom: 2px solid transparent; /* Add a transparent border initially */
-    transition: border-color 0.3s ease; /* Add transition for smooth effect */
-  }
-  
-  a:hover {
-    color: #8EA4D2;
-    border-width: 1px;
-    border-color: black;
-  }
+  color: inherit;
+  text-decoration: none;
+  border-bottom: 2px solid transparent;
+  transition: border-color 0.3s ease;
+}
+
+a:hover {
+  color: #97935f;
+  border-width: 1px;
+  border-color: black;
+}
 
 #navbar {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    height: 6.5%;
-    z-index: 100;
-    background-color: rgb(255, 255, 255);
-    color: #054d68;
-    display: flex;
-    justify-content: space-between;
-    /* Align items to each end */
-    align-items: center;
-    font-family: "Roboto", sans-serif;
-    border-bottom: 2px solid black;
-  }
-  
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 6.5%;
+  z-index: 100;
+  background-color: rgb(255, 255, 255);
+  color: #054d68;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Roboto", sans-serif;
+  border-bottom: 2px solid black;
+}
+
+#home-btn {
+  margin-left: 115px;
+}
+
+#rest-of-nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+#rest-of-nav > a {
+  margin-right: 25px;
+}
+
+#navbar .social-links {
+  gap: 10px;
+  transition: transform 0.3s ease;
+  display: flex;
+  align-items: center;
+}
+
+#navbar .social-links > a {
+  margin-right: 25px;
+}
+
+#navbar .social-links a:hover img {
+  transform: scale(0.9);
+}
+
+/* Media queries for responsiveness */
+
+/* Adjustments for smaller screens */
+@media screen and (max-width: 768px) {
   #home-btn {
-    margin-left: 115px;
-    /* Adjust margin as needed */
+      margin-left: 15px;
   }
-  
+
   #rest-of-nav {
-    display: flex;
-    justify-content: flex-end;
-    /* Align items to the end (right side) */
-    align-items: center;
+      display: none;
   }
-  
-  #rest-of-nav > a {
-    margin-right: 25px;
-    /* Add space between links */
-  }
-  
+
   #navbar .social-links {
-    gap: 10px;
-    /* Adjust the gap between social links */
-    transition: transform 0.3s ease;
-    display: flex;
-    align-items: center;
+      margin-right: 15px;
   }
-  
-  #navbar .social-links > a {
-    margin-right: 25px;
+}
+
+/* Hamburger menu styles */
+#hamburger-menu {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  #hamburger-menu {
+      display: block;
+      margin-right: 15px;
   }
-  
-  #navbar .social-links a:hover img {
-    transform: scale(0.9);
-    /* Scale down the image on hover */
-  }
-  
+}
+
+#hamburger-menu > div {
+  width: 25px;
+  height: 3px;
+  background-color: #000;
+  margin: 5px 0;
+}
+
+.show {
+  display: flex !important;
+  flex-direction: column;
+  align-items: flex-end;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: #fff;
+  padding: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.show > a {
+  margin: 5px 0;
+}
