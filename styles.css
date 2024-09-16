@@ -1,170 +1,74 @@
-/* Reset default margin and padding for body */
+/* General Styles */
 body {
   margin: 0;
   padding: 0;
   font-family: "Roboto", sans-serif;
-  background-image: url("img/shore.jpg"); /* Set background image directly on the body */
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 150%;
-  position: relative; /* Ensure the body is positioned */
+  background: url("img/shore.jpg") center/cover no-repeat;
 }
 
-body::before {
-  content: ""; /* Add content to the pseudo-element */
+header {
   position: fixed;
   top: 0;
-  left: 0;
   width: 100%;
-  height: 100%;
-  background: inherit; /* Inherit the background properties from the body */
-  filter: blur(6px); /* Apply the blur effect */
-  z-index: -1; /* Ensure the pseudo-element is behind other content */
+  z-index: 100;
+  background-color: white;
+  border-bottom: 2px solid black;
 }
 
 main {
-  padding-top: 6.5%; /*navbar space */
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  max-width: 100%;
-  align-items: left;
-  margin-top: 0;
+  padding-top: 80px;
 }
 
-.aboutAreaContainer {
-  background: linear-gradient(
-    to top,
-    rgba(228, 230, 195, 0.9),
-    rgba(228, 230, 195, 0.3)
-  );
-  display: flex;
-  justify-content: center;
-  margin-top: -6%;
-  min-height: 40vh;
+.about-section, .projects-section, .skills-section {
+  padding: 20px;
+  background: rgba(228, 230, 195, 0.9);
+  margin-bottom: 20px;
 }
 
-.aboutArea {
-  margin-left: 10%;
-  display: flex; /* Use flexbox */
-  align-items: flex-end;
-  
+.about-content {
+  text-align: center;
 }
 
-.aboutArea h1 {
-  font-size: 350%; /* Adjust the font size as needed */
-  margin-top: 0;
+.profile-img {
+  width: 150px;
+  border-radius: 50%;
+  margin-top: 10px;
 }
 
-.aboutArea h2 {
-  font-size: 250%;
-  margin-top: 0;
+.projects-section {
+  text-align: center;
 }
 
-.aboutArea p {
-  font-size: 150%;
-  margin-top: 0;
-}
-
-.pic-title {
-  display: flex;
-  justify-content: space-between; /* Align items with space between */
-  align-items: center; /* Align items vertically */
-  gap: 20%;
-  white-space: nowrap;
-}
-
-.aboutText p{
-  display: flex;
-  align-items: flex-end;
-  margin-left: 30px;
-  margin-right: 20px;
-} 
-
-.selfImage {
-  width: 25%; /* Adjust the width of the image */
-  height: auto;
-  margin-right: 10%;
-  
-}
-
-
-.projects {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  text-align: left;
-  margin-left: 10%;
-  min-height: 50vh;
-}
-
-.heading-background {
-  padding: 5px 10px; /* Add padding for spacing around the text */
-  background-color: rgba(255, 255, 255, 0.8); /* Background color with opacity for transparency */
-  border-radius: 10px; /* Apply rounded corners */
-}
-
-
-.project-childs {
-  display: flex;
-  flex-direction: column;
-  
-}
-
-.button {
-  background-color: #022f40; /* Dark blue */
-  color: #e4e6c3; /* Light blue */
-  border: none;
-  padding: 10px 20px;
-  font-size: 16px;
-  cursor: pointer;
+.project-link {
+  display: block;
+  margin: 10px 0;
+  background-color: #022f40;
+  color: #e4e6c3;
+  padding: 10px;
+  text-decoration: none;
   border-radius: 5px;
-  text-decoration: none; /* Remove underline */
-  width: fit-content;
+  transition: background-color 0.3s ease;
 }
 
-.button:hover {
-  background-color: #022f40; /* Dark blue */
+.project-link:hover {
+  background-color: #054d68;
 }
-.skills-container {
-  background: linear-gradient(
-    to top,
-    rgba(228, 230, 195, 0.9),
-    rgba(228, 230, 195, 0.3)
-  );
-  font-size: 150%;
+
+.skills-section ul {
+  list-style-type: none;
+  padding: 0;
+  text-align: center;
+}
+
+.skills-section li {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  text-align: center;
 }
 
 footer {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  justify-content: center;
-  align-items: center;
-}
-
-.footer-border{
-  
-    border: 5px solid rgb(107, 142, 35); /* Green-brown color */
-    background-size: 10px;
-    padding: 0px 1px 0px 1px;
-  
-}
-
-.g_form {
-  display: inline-block;
-  background-color: rgba(228, 230, 195, 0.9);
-  margin: 0;
-  position: relative; /* Add this */
-  overflow: hidden; /* Add this */
-}
-
-.g_form::after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 50px; /* Adjust this to control the height of the fade-out effect */
-  background: linear-gradient(rgba(228, 230, 195, 1.0), transparent);
+  text-align: center;
+  padding: 20px;
+  background-color: #022f40;
+  color: white;
 }

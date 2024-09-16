@@ -1,25 +1,21 @@
-
-
+// Fetch and load navbar
 fetch('navbar.html')
-      .then(response => response.text())
-      .then(data => {
-        document.getElementById('navbar-container').innerHTML = data;
-      });
+  .then(response => response.text())
+  .then(data => {
+    document.getElementById('navbar-container').innerHTML = data;
+    setupStickyNavbar(); // Set up sticky after loading
+  });
 
-window.onscroll = function() {stickyNav()};
+// Sticky Navbar function
+function setupStickyNavbar() {
+  const navbar = document.getElementById('navbar');
+  const sticky = navbar.offsetTop;
 
-var navbar = document.getElementById("navbar");
-
-var sticky = navbar.offsetTop;
-
-navbar.classList.add("sticky")
-
-function stickyNav() {
+  window.onscroll = function() {
     if (window.pageYOffset >= sticky) {
-      navbar.classList.add("sticky")
+      navbar.classList.add('sticky');
     } else {
-      navbar.classList.remove("sticky");
+      navbar.classList.remove('sticky');
     }
-  }
-
-  
+  };
+}
